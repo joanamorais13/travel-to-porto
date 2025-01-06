@@ -1,0 +1,9 @@
+h1{
+    font-family: "Poppins";
+        font-size: 65px;
+        font-weight: 700;
+        line-height: 144px;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+}
