@@ -329,6 +329,9 @@ footer a{
     font-size: 12px;
     }
 
+    .porto-image{
+        display: none;
+    }
     .card-grid{
         display: grid;
         grid-template-columns: 1fr 1fr;
