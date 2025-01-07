@@ -10,7 +10,23 @@ body{
 
 .grid{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 65px;
+}
+
+.grid-2-columns{
+    grid-template-columns: 1fr 1fr;
+}
+
+.grid-3-columns-last-long{
+    grid-template-columns: 1fr 1fr 2fr;
+    padding: 10px;
+}
+
+
+section{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 100px 0;
 }
 header{
     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/porto1.jpeg");
@@ -59,13 +75,53 @@ header a{
     margin-top: 32px;
 }
 
+main{
+    background-color: white;
+}
+
+main h2{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+    letter-spacing: 5px;
+    color: #272044;
+    opacity: 0.3;
+    text-transform: uppercase;
+    }
+
+
+main h3{
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.5;
+    color: #272044;
+    margin: 0;
+}
+
+main p{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #272044;
+    opacity: 0.7;
+    text-align: justify;
+}
+
+main img{
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}
 footer {
     color: white;
-    background-image: linear-gradient(rgba(80, 59, 59, 0.6), rgba(80,
-                59, 59, 0.6)), url("../images/porto2.jpeg");
+    background-image: linear-gradient(rgba(80, 59, 59, 0.9), rgba(80,
+                59, 59, 0.9)), url("../images/porto2.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 100px;
+    background-position: center;
+    padding: 70px;
 }
 
 footer h3{
@@ -79,7 +135,7 @@ footer p{
     font-size: 16px;
     line-height: 24px;
     opacity: 0.9;
-    
+    text-align: justify;
 }
 
 footer ul{
@@ -102,14 +158,14 @@ footer a{
     }
 
     header h1{
-        font-size: 48px;
+        font-size: 40px;
     }
 
     header h2 {
-        font-size: 20px;
+        font-size: 15px;
     }
     header h3 {
-        font-size: 12px;
+        font-size: 10px;
     }
 
     header a{
@@ -117,4 +173,34 @@ footer a{
         padding: 10px 16px;
         margin-top: 16px;
     }
+    
+    .grid{
+        grid-template-columns: 1fr;
+        grid-gap: 32px
+    }
+    section{
+        padding: 30px;
+    }
+
+    main h2{
+        font-size: 15px;
+    }
+    main h3 {
+        font-size: 30px;
+    }
+
+    main p {font-size: 15px;}
+
+
+    
+    footer h3{
+        font-size: 12px;
+    }
+
+    footer p, a{
+    font-size: 12px;
+    }
+
+    
 }
+
