@@ -1,6 +1,9 @@
+
+
 body{
     font-family: "Poppins", sans-serif;
     background-color: rgb(35, 35, 35);
+
 }
 
 .container{
@@ -22,12 +25,68 @@ body{
     padding: 10px;
 }
 
+.grid-3-columns{
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.card{
+    background-color: white;
+    margin-top: 30px;
+    padding: 30px;
+    border-radius: 5px;
+} 
+
+.card-header img:hover {
+    transform: scale(0.99);
+    opacity: 0.8;
+}
+
+.card-body{
+    padding-top: 30px;
+}
+
+
+
+
+.btn{
+    display: block;
+    color: white;
+    text-transform: uppercase;
+    background-color: rgba(80, 59, 59);
+    border-radius: 5px;
+}
+
+
+.btn-header:hover{
+    color: white;
+    background-color:rgba(80, 59, 59);
+    transition: all 200ms ease;
+}
+
+
+
+.text-center{
+    text-align: center;
+}
+
+
+img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    border-radius: 5px;
+}
 
 section{
-    max-width: 1200px;
+    max-width: 100%;
     margin: 0 auto;
-    padding: 100px 0;
+    padding: 100px;
 }
+
+section.secondary {
+    background: rgb(228, 228, 237)
+}
+
 header{
     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/porto1.jpeg");
     background-repeat: no-repeat;
@@ -73,6 +132,7 @@ header a{
     padding: 16px 32px;
     display: inline-block;
     margin-top: 32px;
+    border-radius: 5px;
 }
 
 main{
@@ -99,20 +159,60 @@ main h3{
     margin: 0;
 }
 
+main h4 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1;
+    color: #272044;
+    margin: 0;
+}
+
+main h5 {
+    font-weight: 700;
+    font-size: 14px;
+    margin: 30px 0 0 0;
+    line-height: 1;
+}
+
 main p{
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
-    color: #272044;
     opacity: 0.7;
     text-align: justify;
+
 }
 
-main img{
-    width: 100%;
-    height: auto;
-    max-width: 100%;
+main a{
+    text-decoration: none;
+    color: black;
+}
+
+main p :hover{
+    transition: all 200ms ease;
+    text-decoration:underline;
+}
+main .btn{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: center;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    background-color: rgb(80, 59, 59);
+    text-decoration: none;
+    color: white;
+    padding: 16px 32px;
+    display: block;
+    margin-top: 32px;
+}
+
+main .btn:hover{
+    background-color: white;
+    color: rgb(80, 59, 59);
+    border: 1px solid rgb(80, 59, 59);
+    transition: all 200ms ease;
 }
 footer {
     color: white;
